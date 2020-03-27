@@ -38,7 +38,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql, @name, @grade)
-    a = DB[:conn].execute("SELECT last_insert FROM students")
+    a = DB[:conn].execute("SELECT last_insert_row FROM students")
     binding.pry
   end
 
